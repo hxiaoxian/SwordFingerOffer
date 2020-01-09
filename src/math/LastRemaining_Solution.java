@@ -16,6 +16,8 @@ import java.util.ArrayList;
  * 如果没有小朋友，请返回-1
  */
 public class LastRemaining_Solution {
+    // 时间O(N)
+    // 空间O(N)
     public int LastRemaining_Solution(int n, int m) {
         if (n == 0 || m == 0)
             return -1;
@@ -29,4 +31,20 @@ public class LastRemaining_Solution {
         }
         return list.get(0);
     }
+
+    // 时间O(N)
+    // 空间O(1)
+    // 递推思路：x'=(x + k) % n
+    // 递推公式：
+    //  f[1] = 0;
+    //  f[i] = (f[i-1] + m) % i;  (i>1)
+    public int LastRemaining_Solution1(int n, int m) {
+        if (n == 0 || m == 0)
+            return -1;
+        int last = 0;
+        for (int i = 2; i <= n; i++)
+            last = (last + m) % i;
+        return last;
+    }
+
 }
