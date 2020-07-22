@@ -8,6 +8,7 @@ package tree;
  */
 
 // 类比前序遍历
+// 2020.2.20
 public class VerifySquenceOfBST {
     public boolean VerifySquenceOfBST(int[] sequence) {
         if (sequence.length == 0 || sequence == null)
@@ -19,6 +20,7 @@ public class VerifySquenceOfBST {
         if (start >= end)
             return true;
         int i;
+        // 根节点，利用二叉搜索树 左子树节点值都小于根结点，右子树结点值都大于根节点，进行递归判断。
         int root = sequence[end];
         for (i = start; i < end; i++) {
             if (sequence[i] > root)

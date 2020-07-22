@@ -3,6 +3,7 @@ package list;
 /**
  * 输入一个链表，反转链表后，输出新链表的表头。
  */
+// 2020.2.20
 public class ReverseList {
     //迭代
     public ListNode ReverseList(ListNode head) {

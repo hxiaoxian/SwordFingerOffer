@@ -9,6 +9,7 @@ package array;
 
 // 时间复杂度O（N)
 // 不修改数组
+// 2020.2.20
 public class MoreThanHalfNum_Solution {
     public int MoreThanHalfNum_Solution(int[] array) {
         int result = array[0];

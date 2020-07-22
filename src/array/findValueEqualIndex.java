@@ -14,6 +14,8 @@ package array;
  * <p>
  * 同理，若中间数的值小于它的下标，则中间数左边的那些元素的值也都小于它们的下标，因此需要继续在右边寻找。
  */
+// 2020.2.9
+// 2020.2.20
 public class findValueEqualIndex {
     private static int findValueEqualIndex(int[] data) {
         if (data == null)

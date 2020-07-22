@@ -12,25 +12,17 @@ package dp;
 //              4 从上往下分析问题 从下往上解决问题
 
 //   为了避免重复求解子问题，可以用从下往上的顺序先计算小问题的最优解并存储下来，再以此为基础求取大问题的最优解
+// 2020.2.20
 public class cutRope {
     //dp
-    public int cutRope(int target) {
-        if (target == 2)
-            return 1;
-        if (target == 3)
-            return 2;
-        int[] dp = new int[target + 1];
+    public int cuttingRope(int n) {
+        int[] dp = new int[n + 1];
         dp[1] = 1;
-        dp[2] = 2;
-        dp[3] = 3;
-        int max = 1;
-        for (int i = 4; i <= target; i++) {
-            for (int j = 1; j <= i / 2; j++) {
-                max = Math.max(max, dp[j] * dp[i - j]);
-            }
-            dp[i] = max;
+        for (int i = 2; i <= n; i++) {
+            for (int j = 1; j <= i / 2; j++)
+                dp[i] = Math.max(dp[i], Math.max(j, dp[j]) * Math.max(i - j, dp[i - j]));
         }
-        return max;
+        return dp[n];
     }
 
     // 贪心

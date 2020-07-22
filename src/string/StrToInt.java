@@ -10,6 +10,7 @@ package string;
  * 输出描述:
  * 如果是合法的数值表达则返回该数字，否则返回0
  */
+// 2020.2.20
 public class StrToInt {
     public int StrToInt(String str) {
         if (str.equals("-2147483649") || str.equals("2147483648"))

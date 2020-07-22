@@ -6,6 +6,7 @@ package array;
  * 其中B中的元素B[i]=A[0]*A[1]*...*A[i-1]*A[i+1]*...*A[n-1]。
  * 不能使用除法。
  */
+// 2020.2.20
 public class multiply {
     // 分为两部分计算，先算下三角，再算上三角
     public int[] multiply(int[] A) {

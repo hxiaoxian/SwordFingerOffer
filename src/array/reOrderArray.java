@@ -7,6 +7,8 @@ package array;
  */
 // 空间复杂度O（N）
 // 时间复杂度O（N）
+// 2020.2.9
+// 2020.2.20
 public class reOrderArray {
     public void reOrderArray(int[] array) {
         int[] even = new int[array.length];

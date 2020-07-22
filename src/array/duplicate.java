@@ -8,6 +8,9 @@ package array;
 
 // 时间复杂度：O（N）
 // 空间复杂度：O（1）
+// 2020.2.8
+// 2020.2.20
+// 2020.7.22
 public class duplicate {
     public boolean duplicate(int numbers[], int length, int[] duplication) {
         if (numbers == null || length <= 0)

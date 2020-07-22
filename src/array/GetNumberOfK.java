@@ -4,6 +4,8 @@ package array;
  * 题目描述
  * 统计一个数字在排序数组中出现的次数。
  */
+// 2020.2.9
+// 2020.2.20
 public class GetNumberOfK {
     public int GetNumberOfK(int[] array, int k) {
         if (array.length == 0 || array == null)

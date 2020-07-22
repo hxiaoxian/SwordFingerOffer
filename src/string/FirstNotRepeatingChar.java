@@ -10,6 +10,7 @@ package string;
  * 而数组中具体记录的内容是该字母出现的次数，最终遍历一遍字符串，
  * 找出第一个数组内容为1的字母就可以了，时间复杂度为O(n)
  */
+// 2020.2.20
 public class FirstNotRepeatingChar {
     public int FirstNotRepeatingChar(String str) {
         int[] count = new int[58];

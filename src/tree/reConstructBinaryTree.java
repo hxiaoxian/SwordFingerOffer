@@ -5,7 +5,8 @@ package tree;
  * 例如输入前序遍历序列{1,2,4,7,3,5,6,8}和中序遍历序列{4,7,2,1,5,3,8,6}，则重建二叉树并返回。
  */
 // 把构建二叉树的大问题分解成构建左右子树的两个小问题，发现小问题和大问题在本质上是一样的，因此可用递归的方式解决
-public class  reConstructBinaryTree {
+// 2020.2.20
+public class reConstructBinaryTree {
     public TreeNode reConstructBinaryTree(int[] pre, int[] in) {
         return reConstructBinaryTree(pre, 0, pre.length - 1, in, 0, in.length - 1);
     }

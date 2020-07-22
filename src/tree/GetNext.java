@@ -6,6 +6,7 @@ package tree;
  * 注意，树中的结点不仅包含左右子结点，同时包含指向父结点的指针。
  */
 //分三种情况考虑
+// 2020.2.20
 public class GetNext {
     public TreeLinkNode GetNext(TreeLinkNode node) {
         if (node.right != null) {

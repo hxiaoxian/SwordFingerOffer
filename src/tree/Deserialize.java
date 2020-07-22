@@ -1,7 +1,5 @@
 package tree;
 
-import sun.security.krb5.internal.crypto.Des;
-
 /**
  * 题目描述
  * 请实现两个函数，分别用来序列化和反序列化二叉树
@@ -13,6 +11,7 @@ import sun.security.krb5.internal.crypto.Des;
  * <p>
  * 二叉树的反序列化是指：根据某种遍历顺序得到的序列化字符串结果str，重构二叉树。
  */
+// 2020.2.20
 public class Deserialize {
     String Serialize(TreeNode root) {
         if (root == null)

@@ -7,6 +7,7 @@ package list;
  * 辅助栈O(m+n) 额外空间
  * 遍历法O(m+n)
  */
+// 2020.2.20
 public class FindFirstCommonNode {
     public ListNode FindFirstCommonNode(ListNode pHead1, ListNode pHead2) {
         ListNode p1 = pHead1;

@@ -1,5 +1,6 @@
 package dp;
 
+import java.util.HashMap;
 import java.util.HashSet;
 
 /**
@@ -16,6 +17,7 @@ import java.util.HashSet;
  * <p>
  * 　　另一种思路：滑动窗口
  */
+// 2020.2.20
 public class LongestSubstringWithoutDup {
     public static int maxLength(String s) {
         int i = 0, j = 0;
@@ -29,6 +31,19 @@ public class LongestSubstringWithoutDup {
             } else {
                 set.remove(s.charAt(i++));
             }
+        }
+        return ans;
+    }
+
+    public static int maxLength2(String s) {
+        int n = s.length();
+        int ans = 0;
+        HashMap<Character, Integer> map = new HashMap<>();
+        for (int i = 0, j = 0; i < n; i++) {
+            if (map.containsKey(s.charAt(j)))
+                i = Math.max(i, map.get(s.charAt(j)));
+            ans = Math.max(ans, j - i + 1);
+            map.put(s.charAt(j), j + 1);
         }
         return ans;
     }

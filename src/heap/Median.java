@@ -1,6 +1,5 @@
 package heap;
 
-import java.util.Comparator;
 import java.util.PriorityQueue;
 
 /**
@@ -18,25 +17,22 @@ import java.util.PriorityQueue;
 //⭐当数目为偶数的时候，将这个值插入大顶堆中，再将大顶堆中根节点（即最大值）插入到小顶堆中；
 //⭐当数目为奇数的时候，将这个值插入小顶堆中，再讲小顶堆中根节点（即最小值）插入到大顶堆中；
 //⭐取中位数的时候，如果当前个数为偶数，显然是取小顶堆和大顶堆根结点的平均值；如果当前个数为奇数，显然是取小顶堆的根节点
+//
+// 2020.2.20
 public class Median {
     private int count = 0;
-    private PriorityQueue<Integer> maxHeap = new PriorityQueue<>(new Comparator<Integer>() {
-        @Override
-        public int compare(Integer o1, Integer o2) {
-            return o2 - o1;
-        }
-    });
+    private PriorityQueue<Integer> maxHeap = new PriorityQueue<>((o1, o2) -> (o2 - o1));
     private PriorityQueue<Integer> minHeap = new PriorityQueue<>();
 
     public void Insert(Integer num) {
-        if ((count & 1) == 0) {
+        count++;
+        if ((count & 1) == 1) {
             maxHeap.offer(num);
             minHeap.offer(maxHeap.poll());
         } else {
             minHeap.offer(num);
             maxHeap.offer(minHeap.poll());
         }
-        count++;
     }
 
     public Double GetMedian() {

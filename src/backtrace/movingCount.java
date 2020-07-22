@@ -7,6 +7,7 @@ package backtrace;
  * 例如，当k为18时，机器人能够进入方格（35,37），因为3+5+3+7 = 18。但是，它不能进入方格（35,38），
  * 因为3+5+3+8 = 19。请问该机器人能够达到多少个格子？w
  */
+// 2020.2.20
 public class movingCount {
     public int movingCount(int threshold, int rows, int cols) {
         boolean[] flag = new boolean[rows * cols];

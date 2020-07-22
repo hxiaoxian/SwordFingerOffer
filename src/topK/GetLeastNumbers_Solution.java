@@ -1,7 +1,6 @@
 package topK;
 
 import java.util.ArrayList;
-import java.util.Comparator;
 import java.util.PriorityQueue;
 
 /**
@@ -9,6 +8,8 @@ import java.util.PriorityQueue;
  * 输入n个整数，找出其中最小的K个数。
  * 例如输入4,5,1,6,2,7,3,8这8个数字，则最小的4个数字是1,2,3,4,。
  */
+// 2020.2.11
+// 2020.2.20
 public class GetLeastNumbers_Solution {
     // partition思想，O（N）
     // 如果基于数组的第k个数字来调整，则使得比第k个数字小的所有数字都位于数组的左边，比第k个数字大的所有数字都位于数组的右边。
@@ -54,12 +55,7 @@ public class GetLeastNumbers_Solution {
     public ArrayList<Integer> GetLeastNumbers_Solution1(int[] input, int k) {
         if (input == null || k <= 0 || k > input.length)
             return new ArrayList<>();
-        PriorityQueue<Integer> bigHeap = new PriorityQueue<>(new Comparator<Integer>() {
-            @Override
-            public int compare(Integer o1, Integer o2) {
-                return o2 - o1;
-            }
-        });
+        PriorityQueue<Integer> bigHeap = new PriorityQueue<>((o1, o2) -> o2 - o1);
         for (int num : input) {
             if (bigHeap.size() < k) {
                 bigHeap.offer(num);

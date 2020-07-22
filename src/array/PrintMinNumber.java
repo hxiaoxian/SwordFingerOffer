@@ -14,19 +14,18 @@ import java.util.Comparator;
  * 例如输入数组{3，32，321}，
  * 则打印出这三个数字能排成的最小数字为321323。
  */
+// 2020.2.10
+// 2020.2.20
 public class PrintMinNumber {
-    public  String PrintMinNumber(int[] numbers) {
+    public String PrintMinNumber(int[] numbers) {
         StringBuilder sb = new StringBuilder();
         ArrayList<Integer> list = new ArrayList<>();
         for (int num : numbers)
             list.add(num);
-        Collections.sort(list, new Comparator<Integer>() {
-            @Override
-            public int compare(Integer o1, Integer o2) {
-                String s1 = o1 + "" + o2;
-                String s2 = o2 + "" + o1;
-                return s1.compareTo(s2);
-            }
+        Collections.sort(list, (o1, o2) -> {
+            String s1 = o1 + "" + o2;
+            String s2 = o2 + "" + o1;
+            return s1.compareTo(s2);
         });
         for (int num : list)
             sb.append(num);

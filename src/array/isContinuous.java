@@ -15,6 +15,7 @@ import java.util.Set;
  * 如果牌能组成顺子就输出true，否则就输出false。
  * 为了方便起见,你可以认为大小王是0。
  */
+// 2020.2.20
 public class isContinuous {
     // 必须满足两个条件
     //1. 除0外没有重复的数

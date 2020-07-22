@@ -10,7 +10,27 @@ import java.util.Stack;
  * 后来才意识到，这家伙原来把句子单词的顺序翻转了，正确的句子应该是“I am a student.”。
  * Cat对一一的翻转这些单词顺序可不在行，你能帮助他么？
  */
+// 2020.2.20
 public class ReverseSentence {
+
+    public static String ByStack(String str) {
+        if (str == null || str.length() == 0 || str.trim().equals(""))
+            return str;
+        String[] strs = str.split("\\.");
+        StringBuilder sb = new StringBuilder();
+        Stack<String> stack = new Stack<>();
+        for (String s : strs)
+            stack.push(s);
+        while (!stack.isEmpty())
+            sb.append(stack.pop() + ".");
+        return sb.deleteCharAt(sb.length() - 1).toString();
+    }
+
+    public static void main(String[] args) {
+        System.out.println(ByStack("www.baidu.com"));
+    }
+
+
     // 两次反转,首先反转字符串，再依次反转各个单词
     public String ReverseSentence(String str) {
         if (str == null || str.length() == 0 || str.trim().equals(""))

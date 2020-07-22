@@ -14,6 +14,8 @@ import java.util.ArrayList;
  */
 public class FindContinuousSequence {
     // 双指针
+    // 2020.2.8
+    // 2020.2.20
     public ArrayList<ArrayList<Integer>> FindContinuousSequence(int sum) {
         ArrayList<ArrayList<Integer>> result = new ArrayList<>();
         int low = 1;

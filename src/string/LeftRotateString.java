@@ -7,6 +7,7 @@ package string;
  * 例如，字符序列S=”abcXYZdef”,要求输出循环左移3位后的结果，即“XYZdefabc”。
  * 是不是很简单？OK，搞定它！
  */
+// 2020.2.20
 public class LeftRotateString {
     //类同翻转数组，翻转字符串3次
     public String LeftRotateString(String str, int n) {

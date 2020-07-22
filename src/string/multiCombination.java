@@ -14,6 +14,7 @@ import java.util.ArrayList;
  * 1）如果组合里包含第一个字符，则在剩下的n-1个中选择m-1个字符；
  * 2）如果组合里不包含第一个字符，则在剩下的n-1个中选择m个字符；
  */
+// 2020.2.20
 public class multiCombination {
     ArrayList<String> result = new ArrayList<>();
 
