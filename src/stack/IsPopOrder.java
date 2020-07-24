@@ -11,6 +11,7 @@ import java.util.Stack;
  * （注意：这两个序列的长度是相等的）
  */
 // 2020.2.20
+// 2020.7.24
 public class IsPopOrder {
     public boolean IsPopOrder(int[] pushA, int[] popA) {
         if (pushA == null || popA == null || pushA.length != popA.length)

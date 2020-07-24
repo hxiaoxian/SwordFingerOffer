@@ -6,6 +6,7 @@ package tree;
  */
 // 把构建二叉树的大问题分解成构建左右子树的两个小问题，发现小问题和大问题在本质上是一样的，因此可用递归的方式解决
 // 2020.2.20
+// 2020.7.24
 public class reConstructBinaryTree {
     public TreeNode reConstructBinaryTree(int[] pre, int[] in) {
         return reConstructBinaryTree(pre, 0, pre.length - 1, in, 0, in.length - 1);

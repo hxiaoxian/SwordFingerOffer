@@ -13,6 +13,7 @@ package dp;
 
 //   为了避免重复求解子问题，可以用从下往上的顺序先计算小问题的最优解并存储下来，再以此为基础求取大问题的最优解
 // 2020.2.20
+// 2020.7.24
 public class cutRope {
     //dp
     public int cuttingRope(int n) {

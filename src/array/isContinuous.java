@@ -16,6 +16,7 @@ import java.util.Set;
  * 为了方便起见,你可以认为大小王是0。
  */
 // 2020.2.20
+// 2020.7.23
 public class isContinuous {
     // 必须满足两个条件
     //1. 除0外没有重复的数

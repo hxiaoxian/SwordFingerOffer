@@ -7,6 +7,7 @@ package sort;
 // 比选择的数大的数字移到数组的右边
 //  数组本身已经排好序，而每一轮排序时都以最后一个数字作为比较的标准，此时快排效率只有O（N^2）
 // 2020.2.20
+// 2020.7.24
 public class quicksort {
     // 递归版本快排
     public void quicksort(int[] arr, int left, int right) {

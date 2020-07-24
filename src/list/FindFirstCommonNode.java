@@ -8,6 +8,7 @@ package list;
  * 遍历法O(m+n)
  */
 // 2020.2.20
+// 2020.7.24
 public class FindFirstCommonNode {
     public ListNode FindFirstCommonNode(ListNode pHead1, ListNode pHead2) {
         ListNode p1 = pHead1;

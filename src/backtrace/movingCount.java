@@ -8,6 +8,7 @@ package backtrace;
  * 因为3+5+3+8 = 19。请问该机器人能够达到多少个格子？w
  */
 // 2020.2.20
+// 2020.7.24
 public class movingCount {
     public int movingCount(int threshold, int rows, int cols) {
         boolean[] flag = new boolean[rows * cols];

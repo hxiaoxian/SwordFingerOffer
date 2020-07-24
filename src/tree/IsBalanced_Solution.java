@@ -4,6 +4,7 @@ package tree;
  * 输入一棵二叉树，判断该二叉树是否是平衡二叉树。
  */
 // 2020.2.20
+// 2020.7.24
 public class IsBalanced_Solution {
     private boolean flag = true;
 

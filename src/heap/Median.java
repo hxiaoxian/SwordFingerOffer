@@ -19,6 +19,7 @@ import java.util.PriorityQueue;
 //⭐取中位数的时候，如果当前个数为偶数，显然是取小顶堆和大顶堆根结点的平均值；如果当前个数为奇数，显然是取小顶堆的根节点
 //
 // 2020.2.20
+// 2020.7.24
 public class Median {
     private int count = 0;
     private PriorityQueue<Integer> maxHeap = new PriorityQueue<>((o1, o2) -> (o2 - o1));

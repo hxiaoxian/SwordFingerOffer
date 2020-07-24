@@ -12,6 +12,7 @@ package sort;
  * 例如对于数组 {1,1,1,0,1}，l、m 和 h 指向的数都为 1，此时无法知道最小数字 0 在哪个区间。
  */
 // 2020.2.20
+// 2020.7.24
 public class minNumberInRotateArray {
     public int minNumberInRotateArray(int[] array) {
         int l = 0;

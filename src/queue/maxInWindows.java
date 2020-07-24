@@ -18,6 +18,7 @@ import java.util.LinkedList;
  * {2,3,4,2,6,[2,5,1]}。
  */
 // 2020.2.20
+// 2020.7.24
 public class maxInWindows {
     // 滑动窗口的最大值总是保存在队列首部，队列里面的数据总是从大到小排列。
     public ArrayList<Integer> maxInWindows(int[] num, int size) {

@@ -13,6 +13,7 @@ package string;
  * 当想要知道到某一位置时第一个出现一次的字符，可以通过扫描该哈希表，找到大于等于0的值中的最小值，该值所对应的字符就是当前状态第一个出现一次的字符。
  */
 // 2020.2.20
+// 2020.7.24
 public class CharStatistics {
 
     int[] hashtable = new int[256];

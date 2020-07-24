@@ -6,6 +6,7 @@ package tree;
  * 例如，（5，3，7，2，4，6，8）中，按结点数值大小顺序第三小结点的值为4。
  */
 // 2020.2.20
+// 2020.7.23
 public class KthNode {
     TreeNode result;
     int n;

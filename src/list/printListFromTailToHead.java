@@ -9,6 +9,7 @@ import java.util.Stack;
 // 后进先出类型--->联想到栈------>联想到递归（本质就是一个栈结构）
 // 当链表非常长时，会导致函数调用的层级很深，从而可能导致函数调用栈溢出
 // 2020.2.20
+// 2020.7.24
 public class printListFromTailToHead {
 
     // 栈

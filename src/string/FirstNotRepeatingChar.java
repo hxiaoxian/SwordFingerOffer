@@ -11,6 +11,7 @@ package string;
  * 找出第一个数组内容为1的字母就可以了，时间复杂度为O(n)
  */
 // 2020.2.20
+// 2020.7.24
 public class FirstNotRepeatingChar {
     public int FirstNotRepeatingChar(String str) {
         int[] count = new int[58];

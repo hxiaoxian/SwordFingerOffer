@@ -18,6 +18,7 @@ import java.util.HashSet;
  * 　　另一种思路：滑动窗口
  */
 // 2020.2.20
+// 2020.7.24
 public class LongestSubstringWithoutDup {
     public static int maxLength(String s) {
         int i = 0, j = 0;

@@ -6,6 +6,7 @@ package array;
  * 在范围0到n-1的n个数字中有且只有一个数字不在该数组中，请找出这个数字。
  */
 // 2020.2.20
+// 2020.7.24
 public class MissingNumber {
     //O(N)
     public int getMissingNumber(int[] arr) {

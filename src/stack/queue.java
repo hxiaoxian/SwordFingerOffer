@@ -8,6 +8,7 @@ import java.util.Stack;
  */
 // 类同两个队列实现栈
 // 2020.2.20
+// 2020.7.24
 public class queue {
     Stack<Integer> stack1 = new Stack<Integer>();
     Stack<Integer> stack2 = new Stack<Integer>();

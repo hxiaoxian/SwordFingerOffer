@@ -16,6 +16,7 @@ package array;
  */
 // 2020.2.9
 // 2020.2.20
+// 2020.7.23
 public class findValueEqualIndex {
     private static int findValueEqualIndex(int[] data) {
         if (data == null)

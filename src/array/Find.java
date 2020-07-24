@@ -8,6 +8,7 @@ package array;
 // 从左下角或右上角出发寻找！
 // 2020.2.8
 // 2020.2.20
+// 2020.7.22
 public class Find {
     public static boolean Find(int target, int[][] array) {
         int row = array.length;

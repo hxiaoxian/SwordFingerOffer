@@ -12,6 +12,7 @@ package tree;
  * 二叉树的反序列化是指：根据某种遍历顺序得到的序列化字符串结果str，重构二叉树。
  */
 // 2020.2.20
+// 2020.7.24
 public class Deserialize {
     String Serialize(TreeNode root) {
         if (root == null)

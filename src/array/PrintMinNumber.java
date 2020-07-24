@@ -16,6 +16,7 @@ import java.util.Comparator;
  */
 // 2020.2.10
 // 2020.2.20
+// 2020.7.22
 public class PrintMinNumber {
     public String PrintMinNumber(int[] numbers) {
         StringBuilder sb = new StringBuilder();

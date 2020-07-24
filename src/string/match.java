@@ -14,6 +14,7 @@ package string;
 //     *      match(str,i,pattern,j + 2)//跳过pattern
 //     * 2.下一个不是 *
 //     *     当前匹配 return match(str,i + 1,pattern,j + 1)
+// 2020.7.24
 public class match {
     public boolean match(char[] str, char[] pattern) {
         if (str == null || pattern == null)

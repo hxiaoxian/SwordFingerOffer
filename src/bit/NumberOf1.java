@@ -4,6 +4,7 @@ package bit;
  * 输入一个整数，输出该数二进制表示中1的个数。其中负数用补码表示。
  */
 // 2020.2.20
+// 2020.7.24
 public class NumberOf1 {
     public int NumberOf1(int n) {
         int count = 0;

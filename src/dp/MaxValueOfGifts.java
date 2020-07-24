@@ -6,6 +6,7 @@ package dp;
  * 给定一个棋盘及其上面的礼物，请计算你最多能拿到多少价值的礼物？
  */
 // 2020.2.20
+// 2020.7.24
 public class MaxValueOfGifts {
     //按列优化后的一维dp(该数组前面j个数字分别是当前第i列前面j个格子礼物的最大价值)
     public static int maxValueOfGiftsByRow(int[][] values) {

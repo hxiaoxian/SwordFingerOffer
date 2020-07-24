@@ -5,6 +5,7 @@ package list;
  * 例如，链表1->2->3->3->4->4->5 处理后为 1->2->5
  */
 // 2020.2.20
+// 2020.7.24
 public class deleteDuplication {
     // 递归
     public ListNode deleteDuplication(ListNode pHead) {

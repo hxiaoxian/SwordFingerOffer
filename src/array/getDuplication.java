@@ -15,6 +15,7 @@ package array;
 // 利用二分思想
 // 2020.2.9
 // 2020.2.20
+// 2020.7.23
 public class getDuplication {
     public int getDuplication(int[] arr, int length) {
         int left = 1;

@@ -7,6 +7,7 @@ package bit;
  * 保证base和exponent不同时为0
  */
 // 2020.2.20
+// 2020.7.24
 public class Power {
     // 递归分治
     public double Power1(double base, int exponent) {

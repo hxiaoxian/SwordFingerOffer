@@ -10,6 +10,7 @@ package array;
  */
 // 2020.2.9
 // 2020.2.20
+// 2020.7.22
 public class FindGreatestSumOfSubArray {
     public int FindGreatestSumOfSubArray(int[] array) {
         int max = array[0];

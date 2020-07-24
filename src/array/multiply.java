@@ -7,6 +7,7 @@ package array;
  * 不能使用除法。
  */
 // 2020.2.20
+// 2020.7.24
 public class multiply {
     // 分为两部分计算，先算下三角，再算上三角
     public int[] multiply(int[] A) {

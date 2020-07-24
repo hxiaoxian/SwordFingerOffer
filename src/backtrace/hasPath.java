@@ -6,12 +6,13 @@ package backtrace;
  * 路径可以从矩阵中的任意一个格子开始，每一步可以在矩阵中向左，向右，向上，向下移动一个格子。
  * 如果一条路径经过了矩阵中的某一个格子，则该路径不能再进入该格子。
  * 例如 a b c e
- *      s f c s
+ *      s f e s
  *      a d e e
  *      矩阵中包含一条字符串"bcced"的路径，但是矩阵中不包含"abcb"路径
  *      因为字符串的第一个字符b占据了矩阵中的第一行第二个格子之后，路径不能再次进入该格子。
  */
 // 2020.2.20
+// 2020.7.24
 public class hasPath {
     public boolean hasPath(char[] matrix, int rows, int cols, char[] str) {
         boolean flag[] = new boolean[matrix.length];

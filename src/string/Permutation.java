@@ -12,6 +12,7 @@ import java.util.Collections;
  * 输入一个字符串,长度不超过9(可能有字符重复),字符只包括大小写字母。
  */
 // 2020.2.20
+// 2020.7.24
 public class Permutation {
     public ArrayList<String> Permutation(String str) {
         ArrayList<String> result = new ArrayList<>();

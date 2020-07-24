@@ -12,6 +12,7 @@ package array;
  * 　　将所有数字的二进制表示的对应位都加起来，如果某一位能被三整除，那么只出现一次的数字在该位为0；反之，为1。
  */
 // 2020.2.20
+// 2020.7.24
 public class NumberAppearingOnce {
     public static int findNumberAppearingOnce(int[] arr) {
         if (arr == null || arr.length == 0)

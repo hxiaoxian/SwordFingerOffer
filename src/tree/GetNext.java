@@ -7,6 +7,7 @@ package tree;
  */
 //分三种情况考虑
 // 2020.2.20
+// 2020.7.24
 public class GetNext {
     public TreeLinkNode GetNext(TreeLinkNode node) {
         if (node.right != null) {

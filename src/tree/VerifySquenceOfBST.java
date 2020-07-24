@@ -9,6 +9,7 @@ package tree;
 
 // 类比前序遍历
 // 2020.2.20
+// 2020.7.24
 public class VerifySquenceOfBST {
     public boolean VerifySquenceOfBST(int[] sequence) {
         if (sequence.length == 0 || sequence == null)
